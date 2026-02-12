@@ -1,0 +1,1 @@
+Git is a distributed version control system. Common commands: git init, git add, git commit, git status, git log, git branch, git checkout, git merge, and git push/pull. Remotes like GitHub or GitLab host repositories. Branching strategies like trunk-based and GitFlow are popular in teams.

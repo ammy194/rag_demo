@@ -1,0 +1,1 @@
+Python is a high-level, interpreted programming language known for readability and a vast ecosystem of libraries. Popular package managers include pip and conda. Virtual environments can be created with venv or conda. Python is often used for data science, web development, automation, and AI.
