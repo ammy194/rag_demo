@@ -88,7 +88,7 @@ class VectorIndex:
 # Tiny local LLM (T5-small) to generate answer
 # -------------------------------
 class LocalGenerator:
-    def __init__(self, model_name="t5-small", device=None, max_new_tokens=128):
+    def __init__(self, model_name="google/flan-t5-small", device=None, max_new_tokens=128):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
         self.max_new_tokens = max_new_tokens
@@ -160,7 +160,7 @@ def run_rag(data_folder="data", question="What are common Git commands?", top_k=
 if __name__ == "__main__":
     # Try editing the question below and re-run.
     run_rag(
-        data_folder="data",
+        data_folder=r"C:\MyDrive\Learn\AI\ai-rag\data",
         question="How do I create a Python virtual environment and what is it used for?",
         top_k=4
     )
