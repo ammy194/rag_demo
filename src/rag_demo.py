@@ -108,7 +108,7 @@ def build_prompt(question: str, context_chunks: List[str]) -> str:
     context = "\n\n".join([f"[Context {i+1}]\n{c}" for i, c in enumerate(context_chunks)])
     prompt = (
         "You are a helpful assistant. Answer the question using ONLY the context. "
-        "If the answer is not in the context, say 'I don't know'.\n\n"
+        "Go through the context properly and if the answer is not in the context, say 'I don't know'.\n\n"
         f"{context}\n\n"
         f"Question: {question}\n"
         "Answer:"
@@ -117,7 +117,7 @@ def build_prompt(question: str, context_chunks: List[str]) -> str:
     return f"summarize: {prompt}"
 
 
-def run_rag(data_folder="data", question="What are common Git commands?", top_k=4):
+def run_rag(data_folder="data", question="How many players are there in a cricket team on the field?", top_k=4):
     # 1) Load + chunk documents
     docs = read_text_files(data_folder)
     if not docs:
@@ -161,6 +161,6 @@ if __name__ == "__main__":
     # Try editing the question below and re-run.
     run_rag(
         data_folder=r"C:\MyDrive\Learn\AI\ai-rag\data",
-        question="How do I create a Python virtual environment and what is it used for?",
+        question="How many players are there in a football match?",
         top_k=4
     )
