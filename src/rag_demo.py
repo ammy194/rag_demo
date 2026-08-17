@@ -4,11 +4,8 @@ import numpy as np
 from pathlib import Path
 from typing import List, Tuple
 from tqdm import tqdm
-<<<<<<< HEAD
-=======
 #Testing MJ
 #Testing AP
->>>>>>> 16a0d064c4ed4e50c719ad4ddf197f9bffc53c70
 # Embeddings and LLM
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, T5ForConditionalGeneration
@@ -181,3 +178,5 @@ if __name__ == "__main__":
 #
 #my changesgit 
 #mj br1
+
+#my changes
