@@ -167,7 +167,7 @@ def run_rag(data_folder="data", question="How many players are there in a cricke
     print("ANSWER:")
     print(answer)
     print("=" * 80)
-
+#updating if
 
 if __name__ == "__main__":
     run_rag(
@@ -175,6 +175,8 @@ if __name__ == "__main__":
         question="Which country plays cricket?",
         top_k=4
     )
+
+    
 #
 #my changesgit 
 #mj br1
